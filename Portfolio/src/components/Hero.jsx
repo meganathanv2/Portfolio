@@ -20,30 +20,30 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center hero-gradient pt-20 sm:pt-16">
-      <div className="container-custom section-padding">
+    <section id="home" className="min-h-screen flex items-center justify-center hero-gradient pt-16">
+      <div className="container-custom px-4 py-8 sm:section-padding">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 1 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1"
+            className="space-y-4 lg:space-y-8 text-center lg:text-left order-2 lg:order-1"
           >
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
               className="space-y-4"
             >
-              <h1 className="mobile-heading font-bold text-gray-900 dark:text-white leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
                 Hi, I'm{' '}
                 <span className="gradient-text">MEGANATHAN V</span>
               </h1>
-              <h2 className="mobile-subheading font-semibold text-gray-700 dark:text-gray-300">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300">
                 Full Stack Developer
               </h2>
-              <p className="mobile-text text-gray-600 dark:text-gray-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 I craft modern, responsive web applications using the MERN stack, blending clean UI design with robust backend architecture.
               </p>
             </motion.div>
@@ -103,7 +103,7 @@ const Hero = () => {
 
           {/* Right Content - Profile Image */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 1 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="flex justify-center lg:justify-end order-1 lg:order-2"
@@ -112,12 +112,13 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               className="relative"
             >
-              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-400 via-accent-400 to-primary-500 p-1 shadow-2xl">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-400 via-accent-400 to-primary-500 p-1 shadow-2xl">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 p-2">
                   <img
-                    src="https://res.cloudinary.com/dr6n03ecb/image/upload/v1753869204/WhatsApp_Image_2025-07-30_at_15.16.36_9eb851d0_b8bb2o.jpg"
-                    alt="John Doe"
+                    src="https://res.cloudinary.com/dr6n03ecb/image/upload/v1755249559/My_Photo_nmsjox.jpg"
+                    alt="Meganathan V"
                     className="w-full h-full rounded-full object-cover"
+                    loading="eager"
                   />
                 </div>
               </div>
