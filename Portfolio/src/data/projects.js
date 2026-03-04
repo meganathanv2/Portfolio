@@ -14,21 +14,20 @@ export const projects = [
     title: "NexTube",
     description: "NexTube is a modern video‑platform solution designed to help startups and creators launch their own YouTube‑style streaming service with video uploads, user channels, engagement tracking, and responsive playback.",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
-    technologies: ["React", "JavaScript", "Node.js", "Tailwind CSS","cloudinary"],
+    technologies: ["React", "JavaScript", "Node.js", "CSS","cloudinary"],
     github: "https://github.com/meganathanv2/NexTube",
     // demo: "https://task-manager-demo.vercel.app",
     featured: true
   },
   {
-    id: 3,
-    title: "VibeTalk",
-    description: "VibeTalk is a real-time chat application that enables seamless one-on-one messaging with instant delivery and typing indicators.Built with modern web technologies, it features user authentication, live status updates, and a clean, responsive UI for smooth communication.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
-    technologies: ["React", "Node.js", "Express", "Socket.io", "MongoDB"],
-    github: "https://github.com/meganathanv2/VibeChat",
-    // demo: "https://weather-dashboard.netlify.app",
-    featured: true
-  },
+  id: 3,
+  title: "Quizify 2025",
+  description: "Quizify 2025 is an interactive quiz application built using JavaScript. It features category-based question selection, difficulty-level filtering, real-time countdown timers, and automated score evaluation through dynamic DOM manipulation, providing an engaging and responsive user experience.",
+  image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+  technologies: ["HTML5", "CSS", "JavaScript", "DOM Manipulation"],
+  github: "https://github.com/meganathanv2/Quiz-app.git",
+  featured: true
+},
   {
     id: 4,
     title: "Portfolio Website",

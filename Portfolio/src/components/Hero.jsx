@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download, Mail, Github, Linkedin } from 'lucide-react';
+import profilepic from '../data/Meganathan_V_Photo.jpeg';
 
 // Custom LeetCode icon component
 const LeetCode = ({ size = 24, ...props }) => (
@@ -115,7 +116,7 @@ const Hero = () => {
               <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-400 via-accent-400 to-primary-500 p-1 shadow-2xl">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 p-2">
                   <img
-                    src="https://res.cloudinary.com/dr6n03ecb/image/upload/v1755249559/My_Photo_nmsjox.jpg"
+                    src={profilepic}
                     alt="Meganathan V"
                     className="w-full h-full rounded-full object-cover"
                     loading="eager"

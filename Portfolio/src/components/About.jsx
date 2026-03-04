@@ -26,8 +26,8 @@ const About = () => {
   ];
 
   const techStack = [
-    "React", "Node.js", "TypeScript", "Java", "MongoDB", "MySQL",
-    "Express", "JavaScript", "Git", "Tailwind CSS",
+    "React", "Node.js", "Spring Boot", "Java", "MongoDB", "MySQL",
+    "Express", "JavaScript", "Git", "CSS","HTML"
   ];
 
   return (

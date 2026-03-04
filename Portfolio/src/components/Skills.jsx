@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion';
-import { skills } from '../data/skills';
+import { motion } from "framer-motion";
+import { skills } from "../data/skills";
 
 const Skills = () => {
   const skillCategories = [
     { title: "Frontend Development", skills: skills.frontend },
     { title: "Backend Development", skills: skills.backend },
     { title: "Tools & Platforms", skills: skills.tools },
-    { title: "Other Skills", skills: skills.other }
+    { title: "Other Skills", skills: skills.other },
   ];
 
   return (
@@ -23,8 +23,9 @@ const Skills = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="mobile-text text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4 leading-relaxed">
-            My technical expertise spans across various technologies and tools, 
-            with a focus on modern web development practices and best industry standards.
+            My technical expertise spans across various technologies and tools,
+            with a focus on modern web development practices and best industry
+            standards.
           </p>
         </motion.div>
 
@@ -41,7 +42,7 @@ const Skills = () => {
               <h3 className="mobile-subheading font-semibold text-gray-900 dark:text-white mb-6 lg:mb-8 text-center">
                 {category.title}
               </h3>
-              
+
               <div className="grid gap-3 lg:gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
@@ -55,7 +56,9 @@ const Skills = () => {
                   >
                     <div className="flex items-start gap-3 lg:gap-4">
                       <div className="flex-shrink-0">
-                        <span className="text-2xl lg:text-3xl">{skill.icon}</span>
+                        <span className="text-2xl lg:text-3xl">
+                          {skill.icon}
+                        </span>
                       </div>
                       <div className="flex-1 min-w-0">
                         <h4 className="font-semibold text-gray-900 dark:text-white mb-1 lg:mb-2 mobile-text">
@@ -86,8 +89,12 @@ const Skills = () => {
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 lg:gap-6">
             {[
-              "Responsive Design", "Performance Optimization", "SEO", "Accessibility",
-              "Version Control", "Agile/Scrum", "Problem Solving", "Communication"
+              "Responsive Design",
+              "Accessibility",
+              "Version Control",
+              "Agile/Scrum",
+              "Problem Solving",
+              "Communication",
             ].map((skill, index) => (
               <motion.div
                 key={skill}
@@ -98,7 +105,9 @@ const Skills = () => {
                 whileHover={{ scale: 1.05, y: -2 }}
                 className="bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-3 lg:p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-blue-100 dark:border-gray-600 hover:border-blue-200 dark:hover:border-gray-500 touch-target"
               >
-                <span className="font-medium text-gray-900 dark:text-white mobile-text">{skill}</span>
+                <span className="font-medium text-gray-900 dark:text-white mobile-text">
+                  {skill}
+                </span>
               </motion.div>
             ))}
           </div>
@@ -108,4 +117,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;
